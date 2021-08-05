@@ -167,9 +167,6 @@ public class ApkInstaller {
     }
 
     public static void ownerInstall(Context context, File update) throws IOException {
-        if (!isDeviceOwner(context)) {
-            throw new SecurityException("App is not device owner");
-        }
 
         InputStream in = context.getContentResolver().openInputStream(getUpdate(context, update));
 
