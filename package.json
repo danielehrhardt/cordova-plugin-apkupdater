@@ -11,8 +11,7 @@
   "main": "./src/ionic/index.js",
   "types": "./src/ionic/index.d.ts",
   "scripts": {
-    "build": "tsc -p src/ionic",
-    "prepublish": "npm run build"
+    "build": "tsc -p src/ionic"
   },
   "keywords": [
     "apk",
@@ -35,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/kolbasa/cordova-plugin-apkupdater/issues"
   },
-  "homepage": "https://github.com/kolbasa/cordova-plugin-apkupdater"
+  "homepage": "https://github.com/kolbasa/cordova-plugin-apkupdater",
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
 }
